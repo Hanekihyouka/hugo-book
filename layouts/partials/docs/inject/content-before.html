@@ -5,7 +5,7 @@
     <ul class="post-meta">
         <li>发布于 {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</li>
         {{ if or (not (eq .Date.Month .Lastmod.Month ) ) (not  (eq .Date.Day .Lastmod.Day ) ) }}
-        <li>/ 更新于 {{.Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</li>
+        <li>更新于 {{ .Lastmod.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }}</li>
         {{end}}
     </ul>
 </header>

@@ -1,3 +1,40 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+
+.post-meta {
+  list-style:none;
+  margin-top:0;
+  padding-left:0
+}
+.post-meta li {
+  padding-left:0;
+  display:inline-block;
+  color:var(--gray-500)
+}
+.post-meta li+li::before {
+  content:"/";
+  color:var(--gray-200);
+  padding:0 .25em
+}
+.post-meta a {
+  color:#aaa
+}
+.post-meta a:hover,
+.post-meta a:active {
+  color:#777
+}
+.post-meta a:visited {
+  color:#aaa
+}
+.post-header h1 {
+  margin:0
+}
+.post-header h1 a {
+  color:var(--body-font-color)
+}
+@media screen and (max-width:56rem) {
+  .desktop-header {
+    display:none
+  }
+}
